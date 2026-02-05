@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+header{
+    background-color: #101026;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #0088d2;
+}
+table{
+    text-align: center;
+    margin-top: 40px;
+    height: 200px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+th{
+    background-color: #0088d2;
+    color: white;
+}
+th, td{
+    padding: 8px;
+}
+.tab-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#underline{
+    text-decoration: underline;
+    text-decoration-color: #0088d2;
+    text-decoration-thickness: 3px; 
+}
+.lt-ul{
+    margin-left: 40px;
+}
+.lt-p{
+    text-align: justify;
+    padding: 20px;
+}
+.nav-item{
+    list-style-type: none;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 34px;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav-link{
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: #0088d2;
+    padding: 10px;
+    border-radius: 10px;
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 767px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 69px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 69px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cima_copy-right{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1025px){
+    main{
+        margin: 0 25%;  
+    }
+    footer{
+        background-color: blue;
+        padding-top: 1880px;
+    }
+    .cima_copy-right{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+footer{
+    padding: 20px;
+    background-color: blue;
+}
+
+footer h1, h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+#no-center{
+    text-align: left;
+}
+footer p{
+    text-align: justify;
+    color: azure;
+}
+footer a{
+    font-weight: bold;
+    color: #0088d2;
+    cursor: pointer;
+}
+footer .nav-l a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.icon-red img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+footer .bt{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer .bt:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #101026;
+    color: white;
+    transform: scale(1.1);
+}

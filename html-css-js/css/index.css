@@ -1,0 +1,498 @@
+/*Mundanças gerais do código CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Código que representa a imagem de fundo*/
+
+body{
+    background-image: url("../img/estudantes/estudantes3.jpg");
+    background-size: cover;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #101026;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#underline{
+    text-decoration: underline;
+    text-decoration-color: #0088d2;
+    text-decoration-thickness: 3px;
+    
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 34px;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav-link{
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: #0088d2;
+    padding: 10px;
+    border-radius: 10px;
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-text{
+    position: relative;
+    text-align: center;
+    transform: translateX(-5%);
+    animation: move 2s forwards ease-out;
+    
+}
+
+@keyframes move{
+    from{
+        opacity:0;
+        transform:translateX(-100%);
+        margin-top: 0px;
+    }
+    to{
+        margin-top: 10px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*alterações referente ao botão*/
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bt{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.btn{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
+    transition: 0.5s ease-in-out;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.523);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(2px);
+    color: azure;
+}
+
+.btn .tambtn{
+    font-size: 13px;
+}
+
+/*E, o que acontence ao passar um cursor no elemento botão*/
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #101026;
+    color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px){
+    body{
+        background-image: url("../img/estudantes/estudantes3.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 69px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .inform-ipial{
+        margin-bottom: -368px;
+    }
+    .card-curso img{
+        width: 330px;
+        height: 230px;
+        border-radius: 20px;
+    }
+    .vid-info-right video{
+        padding-bottom: 20px;
+        width: 400px;
+    }
+    .inform-vid{
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 531px;
+        
+    }
+    .vid-info-content .center-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.169);
+        margin-top: 20px;
+        width: 370px;
+    }
+    .container{
+        /*display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: row;*/
+        gap: 60px;
+    }
+    .t-sobre-imagem{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    footer{
+        margin-top: 367px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 69px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .card-curso img{
+        width: 140px;
+        height: 230px;
+        border-radius: 20px;
+    }
+    .vid-info-right video{
+        padding-bottom: 20px;
+        width: 700px;
+    }
+    .t-sobre-imagem{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .inform-vid{
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 751px;
+        
+    }
+    .vid-info-content .center-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.169);
+        margin-top: 20px;
+        width: 740px;
+    }
+    .container{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: row;
+        gap: 60px;
+    }
+    footer .cima_copy-right{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  
+    }
+    
+}
+@media (min-width: 1025px){
+    .inform-vid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 20px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+    .card-curso img{
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .vid-info-right video{
+        padding-bottom: 20px;
+        width: 400px;
+    }
+    .container{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: row;
+        gap: 60px;
+    }
+    .t-sobre-imagem{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    footer{
+        width: 100%;
+        padding-top: 1880px;
+    }
+    footer .footer_content, .nav-l, .cadastro{
+        margin-top: -5px;
+    }
+    
+    footer .cima_copy-right{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.appear-item{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        /* scale:0.5; */
+        transform: translateX(-100px);
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+
+    to{
+        opacity: 1;
+        /* scale:1; */
+        transform: translateX(0px);
+        /* clip-path: inset(0 0 0 0); */
+    }
+}
+
+.inform-ipial{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.card-curso{
+    display: inline-block;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.169);
+    border-radius: 20px;
+    display: grid;
+}
+.card-curso:hover{
+    transform: scale(1.1);
+}
+.card-curso img{
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+.t-sobre-imagem{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.b-saber-mais{
+    display: none;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #101026;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: bottom 0.3s;
+}
+.card-curso:hover .b-saber-mais{
+    display: block;
+    bottom: -60px;
+}
+.card-curso:hover img{
+    filter: brightness(50%);
+}
+.card-curso:hover .t-sobre-imagem{
+    opacity: 0.8;
+}
+.container{
+   /*display: flex;
+   justify-content: center; 
+   align-items: center;
+   flex-direction: row;*/
+   gap: 60px;
+}
+.inform-vid{
+    background-color: #fff;
+}
+.vid-info-content .center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.169);
+    margin-top: 20px;
+}
+.vid-info-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+footer{
+    padding: 20px;
+    width: 100%;
+    background-color: blue;
+}
+
+footer h1, h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+footer p{
+    text-align: justify;
+    color: azure;
+}
+footer a{
+    font-weight: bold;
+    color: #0088d2;
+    cursor: pointer;
+}
+footer .nav-l a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.icon-red img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+footer .bt{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer .bt:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #101026;
+    color: white;
+    transform: scale(1.1);
+}

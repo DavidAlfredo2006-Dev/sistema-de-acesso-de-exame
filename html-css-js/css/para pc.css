@@ -1,0 +1,21 @@
+@media only  screen and (max-width: 1422.22px) {
+    .container{
+        width: 800px;
+        height: 100vh;
+        margin: auto;
+        padding-left: 40px;
+    }
+    .left h1{
+        text-align: center;
+    }
+    .left p{
+        text-align: justify;
+        padding-right: 20px;
+    }
+    img{
+        position: relative;
+        left: 10px;
+        
+    }
+
+}

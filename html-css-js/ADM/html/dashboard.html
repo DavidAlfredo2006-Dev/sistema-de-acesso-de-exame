@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <!--Atualiza a página em 30 minutos-->
+    <meta http-equiv="refresh" content="1800">
+    <!--criadores do SE-IPIAL-->
+    <meta name="author" content="David Alfredo, Idalina Da Silva, Beny Kionda, Juliana Matos"/>
+    <meta name="description" content="Este é um sistem que surgi com o fim de facilitar as inscrições desde arrecadação de dados do estudante, a realização dos exames e até admissão ao Instituto-IPIAL, substituindo as ações manuais e promovendo um caminho mais organizado e eficiente">
+    <meta name="keywords" content="Alda Lara, IPIAL, Incrição, Exame de Acesso, login de estudante, consultar resultado, fazer inscrição, Cursos Medios Tecnicos, curso de informática, curso de eletricidade, curso de telecomunicações, curso de construção civil">
+    <title>Painel Administrativo</title>
+    <link rel="shortcut icon" href="../img/icon/LogoIPIAL.icon" type="image/x-icon">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="all">
+        <div class="left">
+
+            <!--Menu de navegação-->
+
+            <header>
+                <h1 style="text-align: center;">Administração</h1>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="dashboard.html" target="_self">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+            
+                            <a href="exames.html" target="_self">Exames</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cursos.html" target="_self">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="candidatos.html" target="_self">Candidatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="questoes.html" target="_self">Questões</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resultados.html" target="_self">Resultados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="usuario.html" target="_self">Usuário</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!--Painel Administrativo-->
+        
+        <div class="right">
+            <div class="box1">
+                <h1>Painel Administrativo</h1>
+                <p>Sistema de Exame de Acesso | SE-IPIAL</p>
+            </div>
+
+            <div class="box">
+                <a href="exames.html" target="_self">
+                    <div class="min-box">exame</div>
+                </a>
+                <a href="cursos.html" target="_self">
+                    <div class="min-box">cursos</div>
+                </a>
+                <a href="candidatos.html" target="_self">
+                    <div class="min-box">Candidatos</div>
+                </a>
+                <a href="questoes.html" target="_self">
+                    <div class="min-box">Questões</div>
+                </a>
+                <a href="resultados.html" target="_self">
+                    <div class="min-box">Resultado</div>
+                </a>
+                <a href="usuario.html" target="_self">
+                    <div class="min-box">Usuário</div>
+                </a>
+            </div>
+
+            <div class="cards">
+                <div class="card" style="background-color: #1198e6;">
+                    <h3>Exames Ativos</h3>
+                    <p class="card-number">8</p>
+                </div>
+                <div class="card" style="background-color: #63b640;">
+                    <h3>Total de Candidatos</h3>
+                    <p class="card-number">1,250</p>
+                </div>
+                <div class="card" style="background-color: #f6b43b;">
+                    <h3>Exames Pendentes</h3>
+                    <p class="card-number">2</p>
+                </div>
+                <div class="card" style="background-color: rgb(245, 59, 59);">
+                    <h3>Taxa de Aprovação</h3>
+                    <p class="card-number">65%</p>
+                </div>
+            </div>
+
+            <div class="p-gerias">
+                <div class="squared" id="res">
+                    <h3>Últimos Resultados</h3>
+                    <hr>
+                    <p>David Alfredo - 99%</p>
+                    <hr>
+                    <p>Idalina Da Silva - 86%</p>
+                    <hr>
+                    <p>Juliana M. - 74%</p>
+                    <hr>
+                    <p>Beny T. - 64%</p>
+                    <hr>
+                    <div class="btn-l"><button class="btn">Ver Todos</button></div>
+                </div>
+                <div class="squared" id="exam">
+                    <h3>Próximos Exames</h3>
+                    <hr>
+                    <p>Matemática - 17 Março</p>
+                    <hr>
+                    <p>Física - 25 Setemmbro</p>
+                    <hr>
+                    <p>Química - 29 Setembro</p>
+                </div>
+                <div class="squared" id="gt">
+                    <h3>Gestão de Usuários</h3>
+                    <hr>
+                    <div class="botao">
+                        <button class="btn2">Adicionar Usuário</button>
+                        <button class="btn2">Gerenciar Permissões</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

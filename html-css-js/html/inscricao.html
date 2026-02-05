@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <!--Atualiza a página em 30 minutos-->
+    <meta http-equiv="refresh" content="1800">
+    <!--criadores do SE-IPIAL-->
+    <meta name="author" content="David Alfredo, Idalina Da Silva, Beny Kionda, Juliana Matos"/>
+    <meta name="description" content="Este é um sistem que surgi com o fim de facilitar as inscrições desde arrecadação de dados do estudante, a realização dos exames e até admissão ao Instituto-IPIAL, substituindo as ações manuais e promovendo um caminho mais organizado e eficiente">
+    <meta name="keywords" content="Alda Lara, IPIAL, Incrição, Exame de Acesso, login de estudante, consultar resultado, fazer inscrição, Cursos Medios Tecnicos, curso de informática, curso de eletricidade, curso de telecomunicações, curso de construção civil">
+    <title>inscrição</title>
+    <link rel="shortcut icon" href="../img/icon/LogoIPIAL.icon" type="image/x-icon">
+    <link rel="stylesheet" href="../css/incricao.css">
+</head>
+<body>
+
+    <!--Menu de navegação-->
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">SE-IPIAL</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" target="_self"><span id="underline">Home</span></a>
+                </li>
+                <li class="nav-item">
+                <a href="sobre.html" class="nav-link" target="_self">Sobre o Sistema</a>
+                </li>
+                <li class="nav-item">
+                    <a href="historial.html" target="_self" class="nav-link">Historial da Escola</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cursos.html" target="_self" class="nav-link">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rupi.html" class="nav-link" target="_self">Rupi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="espacoinformativo.html" class="nav-link" target="_self">Espaço Informativo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin.html" class="nav-link" target="_self">Administração</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--Formulário de candidatura-->
+
+    <form id="formulario">
+        <div class="centro">
+                <img src="../img/Instituto-IPIAL/LogoIPIAL.JPG" alt="LogoIPIAL"><br><br>
+                <h1 style="text-align: center;">Formulário de Candidatura</h1><br>
+                <div class="caixa-entrada">
+                    <label for="ncompleto">Nome Completo</label><br><br>
+                    <input type="text" id="ncompleto" name="ncompleto" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="caixa-entrada">
+                    <label for="dataNasc">Data de Nascimento</label><br><br>
+                    <input type="date" id="dataNasc" name="dataNasc" required>
+                </div>
+                <div class="caixa-entrada">
+                    <label for="escolaOrigem">Escola de Origem</label><br><br>
+                    <input type="text" id="escolaOrigem" name="escolaOrigem" placeholder="Informe a escola de origem" required>
+                </div>
+                <div class="caixa-entrada">
+                    <label for="tel">Telefone</label><br><br>
+                    <input type="text" id="tel" name="tel" placeholder="(XX) XXXX - XXXX" min="0" required>
+                </div>
+                <div class="caixa-entrada">
+                    <label for="email">E-mail</label><br><br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                </div>
+                <div class="caixa-entrada">
+                    <label for="cursos">Escolha o Curso</label><br><br>
+                    <select name="cursos" id="cursos" class="cursos">
+                        <option value="Construção Civil" selected>Construção Civil</option>
+                        <option value="Electrecidade" selected>Electrecidade</option>
+                        <option value="electronica" selected>Electrónica</option>
+                        <option value="Informática" selected>Informática</option>
+                        <option value="Telecomunicações" selected>Telecomunicações</option>
+                    </select>
+                    <div class="caixa-entrada">
+                    <label for="comprovativo">Digite o nº do comprovativo </label><br><br>
+                    <input type="text" id="comprovativo" name="comprovativo" placeholder="Nº do comprovativo" min="0" required>
+                </div>
+                </div>
+                <h2 style="text-align: center;">Envio de Documento de Identificação <br>(Bilhete/Passaporte)</h2><br>
+                <p style="text-align: justify;">Envie imagem frente e verso do seu documento <br> de Identificação</p><br>
+                <div class="caixa-entrada2">
+                    <label for="FicheiroFrente">Bilhete/Passaporte (Frente)</label><br>
+                    <input type="file" id="FicheiroFrente" name="FicheiroFrente" accept="image/*" required>
+                </div>
+                <div class="caixa-entrada2">
+                    <label for="FicheiroVerso">Bilhete/Passaporte (Verso)</label><br>
+                    <input type="file" id="FicheiroVerso" name="FicheiroVerso" accept="image/*" required>
+                </div><br>
+                
+                <div class="caixa-entrada">
+                    <label for="gen">Escolha o Gênero</label><br><br>
+                    <select name="gen" id="gen" class="gen">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Feminino" selected>Feminino</option>
+                    </select>
+                </div><br><br>
+            
+                <button type="submit" id="btn">Enviar</button>
+        </div>
+    </form>
+
+    <!--Footer/Rodapê, onde consta links referentes as redes socias da escola (sem href/caminho), links do sistema e direitos autoras-->
+    <footer>
+        <div class="cima_copy-right">
+    
+            <div class="footer_content">
+                <h1>SE-IPIAL</h1>
+                <p>Facilite a sua inscrição no IPIAL a partir deste sistema</p><br>
+    
+                <div class="icon">
+                    <h3>Redes Sociais</h3>
+                    <a href="#" class="icon-red">
+                    <img src="../icon/facebook.png" alt="f">
+                    </a>
+                    <a href="#" class="icon-red">
+                    <img src="../icon/instagram.png" alt="i">
+                    </a>
+                    <a href="#" class="icon-red">
+                    <img src="../icon/logo.png" alt="w">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-l">
+                <h3>Navegação</h3>
+                <a href="index.html">Topo</a><br>
+                <a href="sobre.html">Sobre o sistema</a><br>
+                <a href="historial.html">Historial da Escola</a><br>
+                <a href="cursos.html">Cursos</a><br>
+                <a href="#">Noticia</a><br>
+            </div>
+            <div class="nav-l" id="lat">
+                <h3>Interaja</h3>
+                <a href="inscricao.html">Fazer inscrição</a><br>
+                <a href="login.html">Consultar Resultado</a>
+            </div>
+    
+            <div class="cadastro">
+                <h3>Cadastra-se</h3>
+                 <p>Cadastra-se com o seu e-mail para ficar a par sobre as nossas novidades, actividades e eventos.</p><br><br>
+    
+                 <a href="inscricao.html"><button class="bt">Inscrever-se</button></a>
+            </div><br><br>
+        </div>
+
+        <div class="copy-right">
+            <p style="text-align: center;" ><em>&copy; 2026 all rights reserved</em></p>
+        </div>
+    </footer>
+
+    <script src="../js/hamburguer.js"></script>
+    <script src="../js/inscricao.js"></script>
+</body>
+</html>
