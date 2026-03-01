@@ -23,22 +23,7 @@ header{
     margin-top: 12px;
     text-align: center;
 }
-.main-box{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 1000px;
-    gap: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    width: 700px;
-}
-.box{
-    width: 600px;
-    height: 600px;
-    background-color: white;
-    padding: 20px;
-}
+
 #mais{
     display: none;
 }
@@ -139,6 +124,27 @@ a{
     .nav-menu.active{
         left: 0;
     }
+    .main-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 400px;
+        height: 600px;
+        background-color: white;
+        padding: 20px;
+    }
+    img{
+        margin: 0 15%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px){
     .hamburguer{
@@ -172,6 +178,22 @@ a{
     .nav-menu.active{
         left: 0;
     }
+    .main-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 1000px;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 700px;
+    }
+    .box{
+        width: 600px;
+        height: 600px;
+        background-color: white;
+        padding: 20px;
+    }
     .center{
         display: flex;
         justify-content: center;
@@ -187,6 +209,22 @@ a{
 @media (min-width: 1025px){
     main{
         margin: 0 25%;  
+    }
+    .main-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 1000px;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 700px;
+    }
+    .box{
+        width: 600px;
+        height: 600px;
+        background-color: white;
+        padding: 20px;
     }
     footer{
         background-color: blue;
